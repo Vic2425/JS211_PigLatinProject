@@ -15,12 +15,12 @@ const pigLatin = (word) => {
   word = word.toLowerCase().trim();
   let vowels = ["a", "e", "i", "o", "u"];
   // console.log('vowels are:', vowels);
-  let newWord = ''
+  let newWord = '';
   
   if (vowels.includes(word[0])) {
     return word + "yay";
   } else {
-    let arr = word.match(/[aeiou]/g);
+    let arr = word.match(/[aeiou]/g) || 0;
     // console.log('New vowels found match:', arr) // --> to find if word match the vowels for complex words
     let vIndex = word.indexOf(arr[0]);
     // console.log('index of vowel match:', vIndex) // --> find the position of the first vowel in the arr of complex words
