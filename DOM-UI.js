@@ -28,11 +28,6 @@ const pigLatin = () => {
 
 console.log("Hello");
 
-// inputTxt.addEventListener("click", (event) => {
-//   input = event.target.value;
-//   console.log(input);
-// });
-
 clearInput.addEventListener("click", (event) => {
   inputTxt.value = "";
   outputTxt.innerHTML = "";
