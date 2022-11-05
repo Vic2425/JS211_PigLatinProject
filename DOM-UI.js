@@ -1,5 +1,3 @@
-// import pigLatin from './main.js'
-// console.log(pigLatin('Hey'))
 let input = "";
 let inputTxt = document.getElementById("user-input");
 let button = document.getElementById("convert");
@@ -11,7 +9,7 @@ const pigLatin = () => {
   let word = inputTxt.value;
   console.log(inputTxt.value);
   console.log("Hi pigLatin");
-  // word.toLowerCase().trim();
+  word = word.toLowerCase().trim();
   let vowels = ["a", "e", "i", "o", "u"];
   let newWord = "";
 
